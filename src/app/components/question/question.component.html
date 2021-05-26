@@ -1,0 +1,23 @@
+<!-- *ngFor="let question of questions" -->
+<div class="question" >
+  <div class="card">
+
+      <div class="card-header">
+
+        {{que.question}}
+        <a href="" class="btn btn-link" (click)="que.hide=!que.hide">Show</a>
+        <a href="" class="btn btn-link btn-sm red" (click)="removeQuestion(que)">Remove</a>
+        
+      </div>
+
+      <div class="card-block" [hidden]="que.hide">
+        <div class="card-text">
+            {{que.answer}}
+
+        </div>
+        
+      </div>
+
+  </div>
+  <br>
+</div>

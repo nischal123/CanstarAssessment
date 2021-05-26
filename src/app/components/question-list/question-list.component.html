@@ -1,0 +1,11 @@
+<app-add-question (questionAdded)="addQuestion($event)">
+
+</app-add-question>
+
+<hr>
+
+ <!-- in angular tag we must also pass our question
+ to the component  .... question component -->
+<app-question *ngFor="let  QUESTION_num of questions" [questPass]="QUESTION_num">
+
+</app-question>
